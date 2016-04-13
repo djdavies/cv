@@ -1,0 +1,150 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Daniel Jake}{Davies}
+\address{44 Tewkesbury Street}{CF24 4QT, Cardiff}{UK}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+44~(7876)~490~503}                   % optional, remove / comment the line if not wanted
+ % optional, remove / comment the line if not wanted
+\email{jdavies.thfc@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{github.com/djdavies}                                        % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{BSc Computer Science}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2011--2016}{BSC Computer Science}{Cardiff University}{Wales}{\textit{expected: 2.1}}{}  % arguments 3 to 6 can be left empty
+\cventry{2009--2011}{BTEC National IT Practitioners}{City of Bath College}{England}{\textit{Distinction x3}}{}
+
+\section{Undergraduate Dissertation}
+\cvitem{People Tracker}
+\cvitem{Determine the best search results for tracking an individual down on the web, including data collection via web scraping techniques (Google API, PIPL, Facebook and LinkedIn) and data analyses. Using MySQL, PHP , Laravel, jQuery, HTML/CSS and JSON request/response and Chart.js}
+\newline
+github.com/djdavies/PeopleTracker
+
+\section{Experience}
+\cventry{2014--2015}{Software Developer}{The Alacrity Foundation}{Newport, Wales}{}{A year in industry placement: worked on own start-up project' and industrial projects for real world clients, delivered software under agile, scrum methodology. \newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Built own startup project idea, 'Ratingator'.
+\begin{itemize}%
+  \item Built and hosted this web application running on Amazon Web Services Elastic Beanstalk/EC2 instance;
+  \item Built using PHP Laravel framework, jQuery/JavaScript. Made heavy uses of Python libraries for web scraping, and JSON seeding.
+  \item Designed very flexible RDB schema, making use of database migrations.
+  \item Leadership responsibilities, business decisions, and user experience research.
+   \end{itemize}
+\item Delivered Android app with PHP backend for the Welsh Deaf Association:
+  \begin{itemize}%
+  \item Learnt Android and mobile programming whilst delivering application under scrum deadlines.
+  \item PHP backend streaming recorded sign language video, as well as offline support with images
+  \item Interacting with the WDA and learning rudimentary sign on the go.
+  \end{itemize}
+  \item Built a RESTful API for the Office of National Statistics For Analyses of Completed Census Forms
+   \begin{itemize}%
+  \item Worked against Swagger framwork API
+  \item Proposed and used the ME(A)N stack: MongoDB, Express.js, and Node.js using the Mongoose ORM.
+  \end{itemize}
+
+\newline{}
+\cventry{Summer 2014}{Web/Database Programmer}{NHS / Cardiff University}{Heath Hospital, Cardiff, Wales}{}{Research project with Research Design and Conduct Service, working closely with the Information Services department. \newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Worked upon jQuery form builder code, with MS SQL Server key:Value pair database, proposed and designed normalised DB schema, working with jQuery/HTML interface and PHP. 
+\end{itemize}}
+  
+\subsection{Miscellaneous}
+\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Languages}
+\cvitemwithcomment{Language 1}{Skill level}{Comment}
+\cvitemwithcomment{Language 2}{Skill level}{Comment}
+\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+\section{Computer skills}
+\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+\section{Interests}
+\cvitem{hobby 1}{Description}
+\cvitem{hobby 2}{Description}
+\cvitem{hobby 3}{Description}
+
+\section{Extra 1}
+\cvlistitem{Item 1}
+\cvlistitem{Item 2}
+\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+\section{Extra 2}
+\cvlistdoubleitem{Item 1}{Item 4}
+\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
